@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Metal">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#195c43" height="101.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+      <Label layoutX="147.0" layoutY="35.0" text="Metal Bank" textFill="#d8ffde">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="100.0" prefHeight="300.0" prefWidth="400.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5d857c" height="301.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+            <Label layoutX="32.0" layoutY="22.0" text="Choose the program for the substitute" textFill="#b7ffc2">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button id="btnCalc" fx:id="btnCalc" blendMode="OVERLAY" layoutX="302.0" layoutY="256.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="84.0" text="Calculate">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button id="btnReturn" fx:id="btnReturn" blendMode="OVERLAY" layoutX="14.0" layoutY="259.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" text="Return to selection">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Label layoutX="14.0" layoutY="84.0" text="Initial deposit amount" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField id="fieldStartSum" fx:id="fieldStartSum" alignment="CENTER" layoutX="217.0" layoutY="84.0" promptText="Initial amount" />
+            <TextField id="fieldNumberPeriod" fx:id="fieldNumberPeriod" alignment="CENTER" layoutX="217.0" layoutY="125.0" promptText="Deposit periods" />
+            <TextField id="fieldFinalSum" fx:id="fieldFinalSum" alignment="CENTER" editable="false" layoutX="217.0" layoutY="165.0" promptText="Deposit amount" />
+            <Label layoutX="13.0" layoutY="125.0" text="Number of deposit periods" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="165.0" text="The final deposit amount" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

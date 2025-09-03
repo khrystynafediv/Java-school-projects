@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BankController">
+   <children>
+      <AnchorPane layoutY="100.0" prefHeight="300.0" prefWidth="400.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5d857c" height="301.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="401.0" />
+            <Label id="idChoose" fx:id="idChoose" layoutX="100.0" layoutY="23.0" text="Choose the bank" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button id="btnMetal" fx:id="btnMetal" blendMode="OVERLAY" layoutX="25.0" layoutY="93.0" mnemonicParsing="false" onAction="#goMetal" prefHeight="30.0" prefWidth="86.0" text="Metal" />
+            <Button id="btnGlass" fx:id="btnGlass" blendMode="OVERLAY" layoutX="158.0" layoutY="93.0" mnemonicParsing="false" onAction="#goGlass" prefHeight="30.0" prefWidth="86.0" text="Glass" />
+            <Button id="btnWooden" fx:id="btnWooden" blendMode="OVERLAY" layoutX="290.0" layoutY="93.0" mnemonicParsing="false" onAction="#goWooden" prefHeight="30.0" prefWidth="86.0" text="Wooden" />
+            <ImageView id="idImg1" fx:id="idImg1" fitHeight="99.0" fitWidth="86.0" layoutX="25.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../metal.png" />
+               </image>
+            </ImageView>
+            <ImageView id="idImg2" fx:id="idImg2" fitHeight="99.0" fitWidth="86.0" layoutX="158.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../glass.png" />
+               </image>
+            </ImageView>
+            <ImageView id="idImg3" fx:id="idImg3" fitHeight="99.0" fitWidth="86.0" layoutX="290.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../wood.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#195c43" height="101.0" layoutY="-101.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="401.0" />
+            <Label id="idLabel1" fx:id="idLabel1" layoutX="140.0" layoutY="-66.0" text="Deposit Calc" textFill="#d8ffde">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
